@@ -629,6 +629,20 @@
     </script>
 
 
+
+
+   <script>
+        // Dynamically update meta tags based on user interactions or page content
+        function updateMetaTags(destination) {
+            document.title = "Explore " + destination + " - My Travel Website";
+            document.querySelector('meta[name="description"]').setAttribute("content", "Discover the beauty of " + destination + " with our guided tours.");
+            document.querySelector('meta[name="keywords"]').setAttribute("content", destination + ", travel, destinations, adventure, explore, vacation");
+        }
+
+        // Example of calling updateMetaTags function with a destination
+        var selectedDestination = "Hawaii";
+        updateMetaTags(selectedDestination);
+    </script>
    
 
 </body>
