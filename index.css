@@ -158,6 +158,15 @@ body {
     background-color: #333333;
     color: #ffffff;
     padding: 40px 0;
+     background-image: url(images/Designer1.png) !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+
+    font-size: x-large;
 }
 
 .footer h4 {
