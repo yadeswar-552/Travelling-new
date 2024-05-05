@@ -8,6 +8,36 @@
     <meta name="keywords" content="travel, destinations, adventure, explore, vacation">
     <meta name="robots" content="index, follow">
 
+
+
+<!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yourtwitterhandle">
+    <meta name="twitter:title" content="My Travel Website">
+    <meta name="twitter:description" content="Explore the world with our exciting travel destinations.">
+    <meta name="twitter:image" content="https://example.com/image.jpg"> <!-- URL to the main image to be displayed in the card -->
+
+    <!-- Search Engine Optimization (SEO) meta tags -->
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days"> <!-- Revisit the page after 7 days -->
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta name="referrer" content="no-referrer">
+    <meta name="referrer" content="unsafe-url">
+    <meta name="format-detection" content="telephone=no"> <!-- Disable automatic detection of phone numbers -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensure compatibility with Internet Explorer -->
+    <meta name="theme-color" content="#ffffff"> <!-- Set theme color for mobile browsers -->
+    <link rel="canonical" href="https://example.com/"> <!-- Canonical URL for SEO -->
+    
+
+
+
+  
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -631,12 +661,17 @@
 
 
 
-   <script>
+    <script>
         // Dynamically update meta tags based on user interactions or page content
         function updateMetaTags(destination) {
             document.title = "Explore " + destination + " - My Travel Website";
             document.querySelector('meta[name="description"]').setAttribute("content", "Discover the beauty of " + destination + " with our guided tours.");
             document.querySelector('meta[name="keywords"]').setAttribute("content", destination + ", travel, destinations, adventure, explore, vacation");
+            // You may also update Twitter Card meta tags dynamically based on the content being shared
+            document.querySelector('meta[name="twitter:title"]').setAttribute("content", "Explore " + destination + " - My Travel Website");
+            document.querySelector('meta[name="twitter:description"]').setAttribute("content", "Discover the beauty of " + destination + " with our guided tours.");
+            // Update the image URL dynamically
+            document.querySelector('meta[name="twitter:image"]').setAttribute("content", "https://example.com/" + destination + ".jpg");
         }
 
         // Example of calling updateMetaTags function with a destination
